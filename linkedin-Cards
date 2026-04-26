@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinkedIn Posts</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+body {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  background: transparent;
+  padding: 24px 16px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+.card-accent {
+  width: 6px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #0a66c2, #004f9a);
+}
+
+.card-body {
+  padding: 18px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.linkedin-icon {
+  width: 32px;
+  height: 32px;
+  background: #0a66c2;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.linkedin-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+.club-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0a66c2;
+}
+
+.platform-label {
+  font-size: 11px;
+  color: #888;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0a66c2;
+  margin-top: 4px;
+}
+
+.card-cta svg {
+  width: 14px;
+  height: 14px;
+  stroke: #0a66c2;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /* flip arrow for RTL */
+  transform: scaleX(-1);
+}
+
+.card-number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f0f4ff;
+  color: #0a66c2;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.browse-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 20px;
+  background: #0a66c2;
+  color: #ffffff;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(10,102,194,0.25);
+  margin-top: 4px;
+}
+.browse-btn:hover { background: #004f9a; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(10,102,194,0.35); }
+.browse-btn svg { width: 20px; height: 20px; fill: white; flex-shrink: 0; }
+.browse-btn .arrow { width: 16px; height: 16px; stroke: white; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; transform: scaleX(-1); flex-shrink: 0; }
+
+  </style>
+</head>
+<body>
+  <div class="grid">
+
+
+<!-- Card 1 -->
+<a class="card" href="https://www.linkedin.com/posts/saudi-student-club-in-london-2397bb356_%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D9%81%D9%8A-%D9%84%D9%86%D8%AF%D9%86-%D9%88%D8%A7%D8%B9%D8%B6%D8%A7%D8%A4%D9%87-%D8%A8%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D9%85%D8%B9-activity-7321510367128354818-gARj?utm_source=share&utm_medium=member_ios&rcm=ACoAAFbzu5YBezthqjxhNNnyBT3qiLWncUBQI4Q" target="_blank">
+  <div class="card-accent"></div>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="linkedin-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </div>
+      <div>
+        <div class="club-name">النادي السعودي في لندن</div>
+        <div class="platform-label">LinkedIn · منشور</div>
+      </div>
+      <div class="card-number" style="margin-right: auto; margin-left: 0;">١</div>
+    </div>
+    <div class="card-title">دور التطوع واستضافة معالي وزير الحج والعمرة الدكتور توفيق الربيعه لمناقشة البحث والتطوير والابتكار في تسهيل مسيرة المعتمرين والحجاج</div>
+    <div class="card-cta">
+      عرض المنشور
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+  </div>
+</a>
+
+<!-- Card 2 -->
+<a class="card" href="https://www.linkedin.com/posts/saudi-student-club-in-london-2397bb356_%D9%85%D9%82%D8%AA%D8%B7%D9%81%D8%A7%D8%AA-%D9%85%D9%86-%D8%A7%D8%AD%D8%AA%D9%81%D8%A7%D9%84-%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D9%8A-%D8%A8%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3-activity-7428937319052697600-YoWi?utm_source=share&utm_medium=member_ios&rcm=ACoAAFbzu5YBezthqjxhNNnyBT3qiLWncUBQI4Q" target="_blank">
+  <div class="card-accent"></div>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="linkedin-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </div>
+      <div>
+        <div class="club-name">النادي السعودي في لندن</div>
+        <div class="platform-label">LinkedIn · منشور</div>
+      </div>
+      <div class="card-number" style="margin-right: auto; margin-left: 0;">٢</div>
+    </div>
+    <div class="card-title">مقتطفات من احتفال النادي بيوم التأسيس السعودي</div>
+    <div class="card-cta">
+      عرض المنشور
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+  </div>
+</a>
+
+<!-- Card 3 -->
+<a class="card" href="https://www.linkedin.com/posts/saudi-student-club-in-london-2397bb356_%D8%A7%D9%81%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D8%A7%D9%84%D8%B1%D9%85%D8%B6%D8%A7%D9%86%D9%8A-%D8%A8%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D9%85%D8%B9-activity-7431445278186074112-giWy?utm_source=share&utm_medium=member_ios&rcm=ACoAAFbzu5YBezthqjxhNNnyBT3qiLWncUBQI4Q" target="_blank">
+  <div class="card-accent"></div>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="linkedin-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </div>
+      <div>
+        <div class="club-name">النادي السعودي في لندن</div>
+        <div class="platform-label">LinkedIn · منشور</div>
+      </div>
+      <div class="card-number" style="margin-right: auto; margin-left: 0;">٣</div>
+    </div>
+    <div class="card-title">فعالية إفطار النادي السعودي الرمضاني بالتعاون مع الشركاء</div>
+    <div class="card-cta">
+      عرض المنشور
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+  </div>
+  <!-- Card 4 -->
+<a class="card" href="https://www.linkedin.com/posts/saudi-student-club-in-london-2397bb356_%D9%85%D9%82%D8%AA%D8%B7%D9%81%D8%A7%D8%AA-%D9%85%D9%86-%D9%84%D9%82%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%87%D9%86%D8%AF%D8%B3-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%85%D8%AD%D8%B3%D9%86-%D8%A7%D9%84%D9%85%D8%A7%D8%B6%D9%8A-activity-7426072287281532928-svmt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFbzu5YBezthqjxhNNnyBT3qiLWncUBQI4Q" target="_blank">
+  <div class="card-accent"></div>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="linkedin-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </div>
+      <div>
+        <div class="club-name">النادي السعودي في لندن</div>
+        <div class="platform-label">LinkedIn · منشور</div>
+      </div>
+      <div class="card-number" style="margin-right: auto; margin-left: 0;">٤</div>
+    </div>
+    <div class="card-title">مقتطفات من لقاء المهندس عبدالمحسن الماضي</div>
+    <div class="card-cta">
+      عرض المنشور
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+  </div>
+</a>
+</a>
+ <a class="browse-btn" href="https://www.linkedin.com/in/saudi-student-club-in-london-2397bb356/" target="_blank">
+  <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+  تصفح المزيد على صفحتنا في لينكد إن
+  <svg class="arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+</a>
+
+  </div>
+ 
+</body>
+</html>

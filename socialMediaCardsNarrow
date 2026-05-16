@@ -7,15 +7,17 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, sans-serif; background: transparent; }
-  .footer-wrap { width: fit-content; border: 1.5px solid #1a1a1a; border-radius: 6px; overflow: visible; position: relative; }
-  .footer-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 16px; background: #1a1a1a; border-radius: 6px 6px 0 0; }
+  .footer-wrap { width: 100%; border: 1.5px solid #1a1a1a; border-radius: 6px; overflow: visible; position: relative; }
+  .footer-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 28px; background: #1a1a1a; border-radius: 6px 6px 0 0; }
   .org-tag { font-size: 11px; color: #a0a0a0; letter-spacing: 0.08em; font-weight: 500; direction: ltr; }
   .footer-label { font-size: 13px; color: #e8e8e8; font-family: 'Noto Serif Arabic', serif; direction: rtl; font-weight: 500; letter-spacing: 0.04em; }
-  .footer-body { padding: 8px 12px; background: #fff; border-radius: 0 0 6px 6px; border: 1.5px solid #1a1a1a; border-top: none; }
-  .social-row { display: flex; gap: 4px; align-items: center; direction: ltr; }
-  .social-item { position: relative; }
+  .footer-body { padding: 12px 28px; background: #fff; border-radius: 0 0 6px 6px; border: 1.5px solid #1a1a1a; border-top: none; }
+  .social-row { display: flex; align-items: center; direction: ltr; }
+  .social-item { position: relative; margin-right: 20px; }
+  .social-item:last-of-type { margin-right: 0; }
   .social-btn { display: flex; align-items: center; padding: 0 5px 0 0; background: #fff; border: 1.5px solid #1a1a1a; border-radius: 4px; cursor: pointer; line-height: 1; overflow: hidden; transition: background 0.12s; }
-  .single-btn { display: flex; align-items: center; justify-content: center; padding: 0; background: #fff; border: 1.5px solid #1a1a1a; border-radius: 4px; text-decoration: none; line-height: 1; overflow: hidden; transition: filter 0.12s; }
+  .single-btn { display: flex; align-items: center; justify-content: center; padding: 0; background: #fff; border: 1.5px solid #1a1a1a; border-radius: 4px; text-decoration: none; line-height: 1; overflow: hidden; transition: filter 0.12s; margin-right: 20px; }
+  .single-btn:last-child { margin-right: 0; }
   .social-btn:hover, .single-btn:hover { filter: brightness(0.93); }
   .social-item.open .social-btn { background: #1a1a1a; }
   .social-item.open .social-btn .icon-wa { background: #2a7a30; color: #fff; }
@@ -41,7 +43,7 @@
   .card-menu-item:hover { background: #f5f5f5; }
   .card-menu-arrow { font-size: 12px; color: #bbb; flex-shrink: 0; margin-right: auto; direction: ltr; }
   .card-menu-accent { width: 4px; height: 18px; border-radius: 2px; flex-shrink: 0; }
-  .divider-v { width: 1.5px; height: 26px; background: #1a1a1a; margin: 0 1px; opacity: 0.15; flex-shrink: 0; align-self: center; }
+  .divider-v { width: 1.5px; height: 26px; background: #1a1a1a; align-self: center; margin: 0 20px 0 0; opacity: 0.15; flex-shrink: 0; }
 </style>
 </head>
 <body>
@@ -65,19 +67,11 @@
         <div class="card-menu">
           <div class="card-menu-header">
             <span class="card-menu-header-label" style="color:#a8d5b0;">اختر المجموعة</span>
-            <span class="card-menu-header-icon" style="background:#2a7a30;color:#fff;">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.975-1.418A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.953 7.953 0 0 1-4.078-1.117l-.292-.174-3.037.866.847-3.114-.19-.302A7.96 7.96 0 0 1 4 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8zm4.406-5.844c-.242-.121-1.432-.706-1.654-.787-.222-.08-.383-.121-.544.121-.16.242-.624.787-.765.948-.14.162-.282.182-.524.06-.242-.12-1.02-.376-1.943-1.198-.718-.641-1.203-1.432-1.344-1.674-.14-.242-.015-.373.106-.493.109-.109.242-.282.363-.423.12-.14.16-.242.242-.403.08-.162.04-.303-.02-.424-.061-.12-.544-1.313-.746-1.797-.196-.472-.396-.408-.544-.415l-.463-.008c-.16 0-.423.06-.644.303-.222.242-.847.828-.847 2.02 0 1.191.867 2.344.988 2.505.12.16 1.706 2.606 4.134 3.654.578.25 1.028.398 1.38.51.58.184 1.108.158 1.525.096.465-.07 1.432-.585 1.634-1.15.202-.564.202-1.047.14-1.148-.06-.1-.222-.161-.464-.282z"/></svg>
-            </span>
+            <span class="card-menu-header-icon" style="background:#2a7a30;color:#fff;"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.975-1.418A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.953 7.953 0 0 1-4.078-1.117l-.292-.174-3.037.866.847-3.114-.19-.302A7.96 7.96 0 0 1 4 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8zm4.406-5.844c-.242-.121-1.432-.706-1.654-.787-.222-.08-.383-.121-.544.121-.16.242-.624.787-.765.948-.14.162-.282.182-.524.06-.242-.12-1.02-.376-1.943-1.198-.718-.641-1.203-1.432-1.344-1.674-.14-.242-.015-.373.106-.493.109-.109.242-.282.363-.423.12-.14.16-.242.242-.403.08-.162.04-.303-.02-.424-.061-.12-.544-1.313-.746-1.797-.196-.472-.396-.408-.544-.415l-.463-.008c-.16 0-.423.06-.644.303-.222.242-.847.828-.847 2.02 0 1.191.867 2.344.988 2.505.12.16 1.706 2.606 4.134 3.654.578.25 1.028.398 1.38.51.58.184 1.108.158 1.525.096.465-.07 1.432-.585 1.634-1.15.202-.564.202-1.047.14-1.148-.06-.1-.222-.161-.464-.282z"/></svg></span>
           </div>
-          <a class="card-menu-item" href="https://whatsapp.com/channel/0029Vb3E6ZEDDmFQmBDGxf0S" target="_blank">
-            <span class="card-menu-arrow">→</span>قناة النادي<span class="card-menu-accent" style="background:#7a4d00;"></span>
-          </a>
-          <a class="card-menu-item" href="https://chat.whatsapp.com/EMLGCRyx04B3aRiCcXbgiK?mode=gi_t" target="_blank">
-            <span class="card-menu-arrow">→</span>مجموعة طلاب لندن<span class="card-menu-accent" style="background:#0a4d74;"></span>
-          </a>
-          <a class="card-menu-item" href="https://chat.whatsapp.com/CGHNM3Ws5aJLD1IJD7DQYK?mode=gi_t" target="_blank">
-            <span class="card-menu-arrow">→</span>مجموعة متطوعين النادي<span class="card-menu-accent" style="background:#145a20;"></span>
-          </a>
+          <a class="card-menu-item" href="https://whatsapp.com/channel/0029Vb3E6ZEDDmFQmBDGxf0S" target="_blank"><span class="card-menu-arrow">→</span>قناة النادي<span class="card-menu-accent" style="background:#7a4d00;"></span></a>
+          <a class="card-menu-item" href="https://chat.whatsapp.com/EMLGCRyx04B3aRiCcXbgiK?mode=gi_t" target="_blank"><span class="card-menu-arrow">→</span>مجموعة طلاب لندن<span class="card-menu-accent" style="background:#0a4d74;"></span></a>
+          <a class="card-menu-item" href="https://chat.whatsapp.com/CGHNM3Ws5aJLD1IJD7DQYK?mode=gi_t" target="_blank"><span class="card-menu-arrow">→</span>مجموعة متطوعين النادي<span class="card-menu-accent" style="background:#145a20;"></span></a>
         </div>
       </div>
 
@@ -92,16 +86,10 @@
         <div class="card-menu">
           <div class="card-menu-header">
             <span class="card-menu-header-label" style="color:#a8d0e8;">اختر القناة</span>
-            <span class="card-menu-header-icon" style="background:#1a6fa8;color:#fff;">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.28-1.67 7.87c-.12.55-.45.68-.91.42l-2.52-1.86-1.22 1.17c-.13.13-.25.25-.51.25l.18-2.57 4.65-4.2c.2-.18-.04-.28-.31-.1L7.9 14.88 5.4 14.1c-.54-.17-.55-.54.11-.8l8.59-3.31c.45-.17.84.11.83.79z"/></svg>
-            </span>
+            <span class="card-menu-header-icon" style="background:#1a6fa8;color:#fff;"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.28-1.67 7.87c-.12.55-.45.68-.91.42l-2.52-1.86-1.22 1.17c-.13.13-.25.25-.51.25l.18-2.57 4.65-4.2c.2-.18-.04-.28-.31-.1L7.9 14.88 5.4 14.1c-.54-.17-.55-.54.11-.8l8.59-3.31c.45-.17.84.11.83.79z"/></svg></span>
           </div>
-          <a class="card-menu-item" href="https://t.me/LonSSCUK" target="_blank">
-            <span class="card-menu-arrow">→</span>تحديثات النادي<span class="card-menu-accent" style="background:#085e4a;"></span>
-          </a>
-          <a class="card-menu-item" href="https://t.me/joinchat/3H1KCkTqikU5Yzc0" target="_blank">
-            <span class="card-menu-arrow">→</span>استفسارات<span class="card-menu-accent" style="background:#3d2880;"></span>
-          </a>
+          <a class="card-menu-item" href="https://t.me/LonSSCUK" target="_blank"><span class="card-menu-arrow">→</span>تحديثات النادي<span class="card-menu-accent" style="background:#085e4a;"></span></a>
+          <a class="card-menu-item" href="https://t.me/joinchat/3H1KCkTqikU5Yzc0" target="_blank"><span class="card-menu-arrow">→</span>استفسارات<span class="card-menu-accent" style="background:#3d2880;"></span></a>
         </div>
       </div>
 

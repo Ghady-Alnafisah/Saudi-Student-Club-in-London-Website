@@ -110,9 +110,12 @@
       </a>
       <div class="divider-v"></div>
 <!-- Email -->
-<a class="single-btn" href="mailto:saudiclublondon@gmail.com">
-  <span class="platform-icon icon-em">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+<a class="single-btn" href="mailto:saudiclublondon@gmail.com" 
+   title="saudiclublondon@gmail.com" style="width: 50px; padding: 0;">
+  <span class="platform-icon icon-em" style="width: 100%; border-radius: 2px;">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
   </span>
 </a>
     </div>
